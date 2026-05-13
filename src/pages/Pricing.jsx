@@ -1,10 +1,14 @@
 import Tag from "../components/Tag";
 import Cards from "../components/Cards";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import premiumIcon from "../assets/premium-star-icon.svg";
+import Button from "../components/Button";
 
 function Pricing() {
   return (
     <section className="flex flex-col mt-20 gap-4 m-3">
-        <div>
+        
+        <div className=" flex justify-center items-center">
             <Tag text="PRICING" />
         </div>
         
@@ -15,39 +19,57 @@ function Pricing() {
 
         <div>
             <Cards 
-                category="ESSENTIALS"
-                title="BASIC"
-                price="$3.99"
-                features={[
-                    "1080p HD Streaming",
-                    "1 Concurrent Screen",
-                    "Ad/Supported Library"
-                ]}  
+            category="ESSENTIALS"
+            categoryColor="text-soft-pink/50"
+            icon={faCircleCheck}
+            iconColor="text-logo-cyan"
+            title="BASIC"
+            price="$3.99"
+            features={[
+                "1080p HD Streaming",
+                "1 Concurrent Screen",
+                "Ad/Supported Library"
+            ]}
+
+            buttonText="Select Basic"
+
             />
+
             <br />
-                <Cards
-                category="MOST POPULAR"
-                title="SUPERIOR"
-                price="$7.99"
-                features={[
-                    "4K Ultra HD + HDR",
-                    "2 Concurrent Screens",
-                    "No Commercial Breaks",
-                    "Spatial Audio Support"
-                ]}
+
+            <Cards
+            category="MOST POPULAR"
+            categoryColor="text-soft-pink/50"
+            icon={faCircleCheck}
+            iconColor="text-logo-cyan"
+            title="SUPERIOR"
+            price="$7.99"
+            features={[
+                "4K Ultra HD + HDR",
+                "2 Concurrent Screens",
+                "No Commercial Breaks",
+                "Spatial Audio Support"
+            ]}
+
+            buttonText="Select Superior"
             />
+
             <br />
-                <Cards
-                category="ELITE CHOICE"
-                categoryColor="text-cyan-300"
-                title="PREMIUM"
-                price="$10.99"
-                features={[
-                    "8K Streaming Ready",
-                    "Unlimited Screens",
-                    "Early Access Premieres",
-                    "Dolby Atmos Mastering"
-                ]}
+
+            <Cards
+            category="ELITE CHOICE"
+            ribbon="BEST VALUE"
+            categoryColor="text-logo-cyan"
+            customIcon={premiumIcon}
+            title="PREMIUM"
+            price="$10.99"
+            features={[
+                "8K Streaming Ready",
+                "Unlimited Screens",
+                "Early Access Premieres",
+                "Dolby Atmos Mastering"
+            ]}
+            buttonText="Select Premium"
             />  
 
         </div>
