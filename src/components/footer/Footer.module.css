@@ -1,0 +1,5 @@
+@reference "../../index.css";
+
+.footerNavBar {
+    @apply fixed bottom-0 left-0 w-full bg-bg-blue border-2 border-double justify-center items-center mx-auto py-4;
+}
