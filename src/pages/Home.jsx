@@ -1,3 +1,4 @@
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0D0B1F] text-[#E2E0FC] px-6 pt-24 pb-32 font-['Be_Vietnam_Pro']">
@@ -40,7 +41,7 @@ export default function Home() {
       <section className="mt-36">
         <div className="relative rounded-3xl overflow-hidden border border-white/10">
           <img
-            src="./assets/interstellar.jpg"
+             src="/interstellar.jpg"
             alt="Featured movie"
             className="w-full h-[240px] object-cover opacity-80"
           />
@@ -74,7 +75,7 @@ export default function Home() {
         {/* CARD */}
         <div className="mt-8 bg-[#151028] border border-white/10 rounded-3xl p-5 flex gap-5">
           <img
-            src="./assets/drama_card.jpg"
+            src="/drama_card.jpg"
             alt="Movie"
             className="w-28 h-36 object-cover rounded-2xl"
           />

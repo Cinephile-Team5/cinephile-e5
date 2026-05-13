@@ -15,3 +15,6 @@
 body {
   background-color: var(--color-bg-blue);
 }
+main {
+  background-color: var(--color-bg-blue);
+}
