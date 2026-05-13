@@ -12,9 +12,13 @@
   --color-white: #E2E0FC;
   --color-fuchsia: #DF00C8;
   --color-soft-pink: #e9e6ff;
+  --color-gray-contact: #1f1c30
 
 }
 
 body {
+  background-color: var(--color-bg-blue);
+}
+main {
   background-color: var(--color-bg-blue);
 }

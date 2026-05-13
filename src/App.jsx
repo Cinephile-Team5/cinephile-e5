@@ -1,9 +1,11 @@
+import Home from "./pages/Home";
 import Pricing from "./pages/Pricing"
 
 function App() {
   return (
 <>
-  <Pricing />
+   <Home/>
+   <Pricing/>
 </>
   )
 }
