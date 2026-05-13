@@ -1,9 +1,10 @@
+import Home from "./pages/Home";
 import Pricing from "./pages/Pricing"
 
 function App() {
   return (
 <>
-  <Pricing />
+    <h2 className="text-logo-cyan font-logo-spline"> FUNCIONA</h2>
 </>
   )
 }
