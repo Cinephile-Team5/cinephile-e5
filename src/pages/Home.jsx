@@ -1,4 +1,4 @@
-
+import Button from "../components/Button";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0D0B1F] text-[#E2E0FC] px-6 pt-24 pb-32 font-['Be_Vietnam_Pro']">
@@ -27,9 +27,7 @@ export default function Home() {
 
         {/* BUTTONS */}
         <div className="mt-12 flex flex-col gap-5">
-          <button className="bg-[#00F4FE] text-[#0D0B1F] text-3xl font-bold py-5 rounded-2xl transition hover:scale-[1.02]">
-            Get Access
-          </button>
+           <Button text="Get Access"/>  
 
           <button className="border border-[#00F4FE]/30 text-[#00F4FE] text-3xl font-bold py-5 rounded-2xl transition hover:bg-[#00F4FE]/10">
             View Catalog
