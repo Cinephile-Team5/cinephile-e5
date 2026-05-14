@@ -5,7 +5,7 @@ import ButtonCards from "./ButtonCards";
 function Cards({ category, title, price, features, categoryColor, icon, iconColor, customIcon, buttonText, ribbon}) {
   return (
   
-  <div className="relative overflow-hidden flex flex-col gap-1 border-2 bg-bg-blue-card border-gray-800 hover:border-cyan-400 rounded-lg p-6 w-full">
+  <div className="relative overflow-hidden flex flex-col gap-1 border-2 bg-bg-blue-card border-gray-800 hover:border-cyan-400 rounded-lg p-5 w-full flex-1 items-center">
 
     {ribbon && (
         <div className="absolute top-5 -right-10 rotate-45 bg-fuchsia text-white text-[10px] tracking-wide font-bold w-40 p-1 text-center" >
@@ -30,7 +30,7 @@ function Cards({ category, title, price, features, categoryColor, icon, iconColo
                 <li 
                 key={index} className="flex items-center gap-2">
                 {customIcon ? (
-                    <img src={customIcon} alt="Premium Icon" className="w-7 h-7" />
+                    <img src={customIcon} alt="Premium Icon" className="w-4 h-4" />
                 ) : (
                     <FontAwesomeIcon icon={icon} size="lg" className={iconColor}/>
                 )}
@@ -41,8 +41,10 @@ function Cards({ category, title, price, features, categoryColor, icon, iconColo
         </ul>
 
         <br />
+        <div className="mt-auto pt-6">
+            <ButtonCards text={buttonText} />
+        </div>
         
-        <ButtonCards text={buttonText} />
 
 
         
