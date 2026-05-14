@@ -1,12 +1,16 @@
-import Home from "./pages/Home";
-import Pricing from "./pages/Pricing"
+import { Outlet } from "react-router";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
 
 function App() {
   return (
-<>
-   <Home/>
-   <Pricing/>
-</>
+    <div className="min-h-screen pb-24">
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   )
 }
 
