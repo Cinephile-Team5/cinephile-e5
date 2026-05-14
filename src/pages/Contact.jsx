@@ -7,13 +7,17 @@ function Contact() {
 
             <div>
             <h1 className="text-3xl font-bold text-cyan-300">Contact Us</h1>
-            <p className="text-gray-400 font-light text-sm mt-4">Send a transmission to our orbital station.</p>
+            <p className="text-gray-400 text-[16px] mt-4">Send a transmission to our orbital station.</p>
             </div>
 
-            <form className="flex flex-col gap-4 mt-6" w-full>
-                <input type="text" placeholder="Full Name" className="p-3 rounded-lg text-white border border-gray-700 bg-bg-blue-card focus:outline-none focus:ring-2 focus:ring-cyan-300" />
-                <input type="email" placeholder="Email Adress" className="p-3 rounded-lg text-white border border-gray-700 bg-bg-blue-card focus:outline-none focus:ring-2 focus:ring-cyan-300" />
-                <textarea placeholder="Your Message..." className="p-3 rounded-lg text-white border border-gray-700 bg-bg-blue-card focus:outline-none focus:ring-2 focus:ring-cyan-300 h-32 resize-none"></textarea>
+            <form className="flex flex-col gap-2 mt-5" w-full>
+                <label className="text-cyan-300 font-logo-spline text-[12px]">IDENTIFIER</label>
+                <input type="text" placeholder="Full Name" className="p-3 rounded-lg text-white border border-gray-700 bg-bg-blue-card focus:outline-none focus:ring-2 focus:ring-cyan-300 mb-3" />
+                <label className="text-cyan-300 font-logo-spline text-[12px]">E-MAIL</label>
+                <input type="email" placeholder="Email Adress" className="p-3 rounded-lg text-white border border-gray-700 bg-bg-blue-card focus:outline-none focus:ring-2 focus:ring-cyan-300 mb-3" />
+
+                <label className="text-cyan-300 font-logo-spline text-[12px]">MESSAGE</label>
+                <textarea placeholder="Your Message..." className="p-5 rounded-lg text-white border border-gray-700 bg-bg-blue-card focus:outline-none focus:ring-2 focus:ring-cyan-300 h-32 resize-none mb-3"></textarea>
                 <Button text="Send"/>
             </form>
         </div>
