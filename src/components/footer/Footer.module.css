@@ -1,0 +1,22 @@
+@reference "../../index.css";
+
+.footerNavBar {
+    @apply fixed bottom-0 left-0 w-full bg-bg-blue flex justify-around mx-auto py-4 md:hidden;
+}
+
+.footerNavBar::before {
+    content: '';
+    @apply absolute inset-0 bg-white/1 pointer-events-none border-white/10 border border-double;
+}
+
+.footer {
+    @apply flex flex-col flex-wrap justify-center text-center md:flex-row md:flex-nowrap md:justify-between md:items-center md:fixed md:bottom-0 md:left-0 md:w-full md:bg-bg-blue;;
+}
+
+
+.footerWebMap {
+    @apply flex flex-wrap justify-center text-center w-4/5 mx-auto gap-2 py-4 text-gray font-logo-spline md:flex-nowrap md:justify-around md:items-center md:w-auto md:py-0 md:size-auto;
+}
+
+
+
