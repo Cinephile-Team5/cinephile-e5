@@ -2,7 +2,6 @@ import Tag from "../components/Tag";
 import Cards from "../components/Cards";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import premiumIcon from "../assets/premium-star-icon.svg";
-import Button from "../components/Button";
 
 function Pricing() {
   return (
